@@ -5,7 +5,9 @@ This is where I documented my journey while learning Data Analysis with the Incu
 ---
 
 ### Table of Contents
-1. Introduction
+
+[Introduction](#introduction)
+
 
 2. Tools and Skills
 
@@ -120,9 +122,9 @@ MATCH()
 
 #### Pivot Tables and Charts
 
-Creating Pivot Tables for summarizing large datasets.
+- Creating Pivot Tables for summarizing large datasets.
 
-Building dynamic charts and graphs to visualize trends.
+- Building dynamic charts and graphs to visualize trends.
 
 
 ---
