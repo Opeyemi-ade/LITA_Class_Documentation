@@ -10,19 +10,15 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 [Tools and Skills](#tools-and-skills).
 
-Excel Learning
+[Excel Learning](#excel-learning).
 
-Basics of Excel
+[Data Cleaning and Manipulation](#data-cleaning-and-manipulation).
 
-Data Cleaning and Manipulation
+[Formulas and Functions](#formula-and-functions)
 
-Formulas and Functions
+[Pivot Tables and Charts](#pivot-tables-and-charts)
 
-Pivot Tables and Charts
-
-4. SQL Learning
-
-SQL Basics
+[SQL Learning](#sql-learning).
 
 Data Querying
 
