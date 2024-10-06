@@ -8,10 +8,9 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 [Introduction](#introduction)
 
+[Tools and Skills](#tools-and-skills).
 
-1. Tools and Skills
-
-2. Excel Learning
+Excel Learning
 
 Basics of Excel
 
