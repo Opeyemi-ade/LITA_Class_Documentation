@@ -9,9 +9,9 @@ This is where I documented my journey while learning Data Analysis with the Incu
 [Introduction](#introduction)
 
 
-2. Tools and Skills
+1. Tools and Skills
 
-3. Excel Learning
+2. Excel Learning
 
 Basics of Excel
 
