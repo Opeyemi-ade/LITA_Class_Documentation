@@ -1,13 +1,12 @@
 # LITA_Class_Documentation
-This is where I documented my first project while learning Data Analysis with the Incubator Hub.
-
+This is where I documented my journey while learning Data Analysis with the Incubator Hub. Focusing on tools like Excel, (For Data Cleaning, Data Analysis, Data Visualization), SQL, (Structured Query Language for querying Data), Github, ( for Portfolio Building), and Power BI. I will update this repository with notes, exercises, and projects as I progress.
 
 
 ---
 
 Data Analysis Learning Journey
 
-This repository documents my journey as I learn data analysis, focusing on tools like Excel, (For Data Cleaning, Data Analysis, Data Visualization), SQL, Github, and Power BI. I will update this repository with notes, exercises, and projects as I progress.
+This repository documents my journey as I learn data analysis, 
 
 
 ---
