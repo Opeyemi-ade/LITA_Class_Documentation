@@ -92,7 +92,8 @@ This repository serves as a log of my learning process in data analysis, includi
 
 #### Formulas and Functions
 
-```Basic functions like:
+Basic functions like:
+```Excel
 SUM()
 AVERAGE()
 COUNT()
