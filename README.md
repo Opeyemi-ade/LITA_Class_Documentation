@@ -20,25 +20,9 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 [SQL Learning](#sql-learning).
 
-Data Querying
+[Projects](#projects).
 
-Joining Tables
-
-Aggregations and Functions
-
-5. Exercise
-
-Excel
-
-Pivot
-
-6. Projects
-
-Excel Projects
-
-SQL Projects
-
-6. Resources
+[Resources](#resources).
 
 
 ---
@@ -159,33 +143,33 @@ Grouping data with GROUP BY.
 
 
 ---
-Projects
+### Projects
 
-Excel Projects
+#### Excel Projects
 
-1. Sales Data Analysis: Using a sample sales dataset, clean, sort, and visualize the sales performance over different periods and regions.
-
-
-2. Employee Productivity Tracker: Analyze a dataset of employee productivity, using pivot tables and charts.
+- Sales Data Analysis: Using a sample sales dataset, clean, sort, and visualize the sales performance over different periods and regions.
 
 
-
-SQL Projects
-
-1. Customer Orders Database: Write SQL queries to analyze customer orders, identify high-value customers, and discover trends in purchasing behavior.
-
-
-2. Movie Database: Query a movie database to find information like popular genres, top-rated films, and average ratings.
+- Employee Productivity Tracker: Analyze a dataset of employee productivity, using pivot tables and charts.
 
 
 
-Resources
+#### SQL Projects
 
-Excel Official Documentation
+- Customer Orders Database: Write SQL queries to analyze customer orders, identify high-value customers, and discover trends in purchasing behavior.
 
-SQL Tutorials
 
-Kaggle Datasets - Free datasets to practice data analysis.
+- Movie Database: Query a movie database to find information like popular genres, top-rated films, and average ratings.
+
+
+
+### Resources
+
+- Excel Official Documentation
+
+- SQL Tutorials
+
+- Kaggle Datasets - Free datasets to practice data analysis.
 
 
 ---
