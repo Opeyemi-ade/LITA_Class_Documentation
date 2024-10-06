@@ -99,9 +99,20 @@ AVERAGE()
 COUNT()
 ```
 
-Logical functions: IF(), AND(), OR().
+Logical functions:
+```Excelfunction
+IF()
+AND()
+OR()
+```
 
-Lookup functions: VLOOKUP(), HLOOKUP(), INDEX() and MATCH().
+Lookup functions:
+```Excel
+VLOOKUP()
+HLOOKUP()
+INDEX()
+MATCH()
+```
 
 
 #### Pivot Tables and Charts
