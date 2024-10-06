@@ -55,9 +55,17 @@ This repository serves as a log of my learning process in data analysis, includi
 
 ### Tools and Skills
 
-- Microsoft Excel: Data cleaning, sorting, pivot tables, and data visualization.
+- Microsoft Excel:
+  1. Data cleaning
+  2. Sorting
+  3. Pivot Tables
+  4. Data Visualization
 
-- SQL: Querying databases, filtering data, joining tables, and aggregating data.
+- SQL:
+  1. Querying Databases
+  2. Filtering Data
+  3. Joining Tables
+  4. Aggregating Data
 
 
 ---
@@ -66,18 +74,18 @@ This repository serves as a log of my learning process in data analysis, includi
 
 #### Basics of Excel
 
-Data entry, formatting cells, and basic navigation.
+- Data entry, formatting cells, and basic navigation.
 
-Types of data (numerical, text, dates) and their significance in analysis.
+- Types of data (numerical, text, dates) and their significance in analysis.
 
 
 #### Data Cleaning and Manipulation
 
-Sorting and filtering data.
+- Sorting and filtering data.
 
-Removing duplicates and handling missing data.
+- Removing duplicates and handling missing data.
 
-Using Text to Columns and Data Validation.
+- Using Text to Columns and Data Validation.
 
 
 #### Formulas and Functions
