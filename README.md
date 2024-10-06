@@ -14,7 +14,7 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 [Data Cleaning and Manipulation](#data-cleaning-and-manipulation).
 
-[Formulas and Functions](#formula-and-functions)
+[Formulas and Functions](#formulas-and-functions)
 
 [Pivot Tables and Charts](#pivot-tables-and-charts)
 
