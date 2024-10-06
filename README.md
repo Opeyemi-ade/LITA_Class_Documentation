@@ -116,7 +116,7 @@ MATCH()
 
 ### Data Exercise
 
-
+https://github.com/Opeyemi-ade/LITA_Class_Documentation/blob/main/Excel%20Functions%20Exercise.png
 
 #### Pivot Tables and Charts
 
