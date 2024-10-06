@@ -55,9 +55,9 @@ This repository serves as a log of my learning process in data analysis, includi
 
 ### Tools and Skills
 
-Microsoft Excel: Data cleaning, sorting, pivot tables, and data visualization.
+- Microsoft Excel: Data cleaning, sorting, pivot tables, and data visualization.
 
-SQL: Querying databases, filtering data, joining tables, and aggregating data.
+- SQL: Querying databases, filtering data, joining tables, and aggregating data.
 
 
 ---
