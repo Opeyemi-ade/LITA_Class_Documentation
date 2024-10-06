@@ -64,14 +64,14 @@ SQL: Querying databases, filtering data, joining tables, and aggregating data.
 
 ### Excel Learning
 
-### Basics of Excel
+#### Basics of Excel
 
 Data entry, formatting cells, and basic navigation.
 
 Types of data (numerical, text, dates) and their significance in analysis.
 
 
-### Data Cleaning and Manipulation
+#### Data Cleaning and Manipulation
 
 Sorting and filtering data.
 
@@ -80,7 +80,7 @@ Removing duplicates and handling missing data.
 Using Text to Columns and Data Validation.
 
 
-### Formulas and Functions
+#### Formulas and Functions
 
 Basic functions like SUM(), AVERAGE(), COUNT().
 
@@ -89,7 +89,7 @@ Logical functions: IF(), AND(), OR().
 Lookup functions: VLOOKUP(), HLOOKUP(), INDEX() and MATCH().
 
 
-### Pivot Tables and Charts
+#### Pivot Tables and Charts
 
 Creating Pivot Tables for summarizing large datasets.
 
@@ -100,7 +100,7 @@ Building dynamic charts and graphs to visualize trends.
 
 ### SQL Learning
 
-### SQL Basics
+#### SQL Basics
 
 Introduction to SQL syntax and statements.
 
@@ -109,7 +109,7 @@ Understanding databases and tables.
 Using SELECT statements to extract data.
 
 
-### Data Querying
+#### Data Querying
 
 Filtering data using WHERE clauses.
 
@@ -118,14 +118,14 @@ Sorting data with ORDER BY.
 Limiting data with LIMIT.
 
 
-### Joining Tables
+#### Joining Tables
 
 Introduction to different joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
 
 Combining data from multiple tables to answer questions.
 
 
-### Aggregations and Functions
+#### Aggregations and Functions
 
 Using aggregate functions: COUNT(), SUM(), AVG(), MIN(), MAX().
 
