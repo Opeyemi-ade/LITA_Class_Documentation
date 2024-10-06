@@ -114,6 +114,9 @@ INDEX()
 MATCH()
 ```
 
+### Data Exercise
+
+
 
 #### Pivot Tables and Charts
 
