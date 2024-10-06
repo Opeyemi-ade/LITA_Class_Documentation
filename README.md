@@ -87,10 +87,16 @@ This repository serves as a log of my learning process in data analysis, includi
 
 - Using Text to Columns and Data Validation.
 
+- Data cleaning and formating.
+
 
 #### Formulas and Functions
 
-Basic functions like SUM(), AVERAGE(), COUNT().
+```Basic functions like:
+SUM()
+AVERAGE()
+COUNT()
+```
 
 Logical functions: IF(), AND(), OR().
 
