@@ -4,14 +4,7 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 ---
 
-Data Analysis Learning Journey
-
-This repository documents my journey as I learn data analysis, 
-
-
----
-
-Table of Contents
+## Table of Contents
 
 1. Introduction
 
@@ -42,11 +35,11 @@ Joining Tables
 Aggregations and Functions
 
 
-5. Projects
+5. Exercise
 
-Excel Projects
+Excel
 
-SQL Projects
+Pivot
 
 
 
@@ -65,7 +58,7 @@ SQL Projects
 
 ---
 
-Introduction
+### Introduction
 
 This repository serves as a log of my learning process in data analysis, including key takeaways, exercises, and project work. The primary tools I am focusing on at this stage are Microsoft Excel and SQL.
 
