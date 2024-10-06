@@ -4,13 +4,10 @@ This is where I documented my journey while learning Data Analysis with the Incu
 
 ---
 
-## Table of Contents
-
+### Table of Contents
 1. Introduction
 
-
 2. Tools and Skills
-
 
 3. Excel Learning
 
@@ -22,8 +19,6 @@ Formulas and Functions
 
 Pivot Tables and Charts
 
-
-
 4. SQL Learning
 
 SQL Basics
@@ -34,14 +29,11 @@ Joining Tables
 
 Aggregations and Functions
 
-
 5. Exercise
 
 Excel
 
 Pivot
-
-
 
 6. Projects
 
@@ -49,36 +41,37 @@ Excel Projects
 
 SQL Projects
 
-
-
 6. Resources
-
-
 
 
 ---
 
 ### Introduction
 
-This repository serves as a log of my learning process in data analysis, including key takeaways, exercises, and project work. The primary tools I am focusing on at this stage are Microsoft Excel and SQL.
+This repository serves as a log of my learning process in data analysis, including key takeaways, exercises, and project work. The primary tools I am focusing on at this stage are Microsoft Excel, SQL, and Power BI.
 
-Tools and Skills
+
+---
+
+### Tools and Skills
 
 Microsoft Excel: Data cleaning, sorting, pivot tables, and data visualization.
 
 SQL: Querying databases, filtering data, joining tables, and aggregating data.
 
 
-Excel Learning
+---
 
-Basics of Excel
+### Excel Learning
+
+### Basics of Excel
 
 Data entry, formatting cells, and basic navigation.
 
 Types of data (numerical, text, dates) and their significance in analysis.
 
 
-Data Cleaning and Manipulation
+### Data Cleaning and Manipulation
 
 Sorting and filtering data.
 
@@ -87,7 +80,7 @@ Removing duplicates and handling missing data.
 Using Text to Columns and Data Validation.
 
 
-Formulas and Functions
+### Formulas and Functions
 
 Basic functions like SUM(), AVERAGE(), COUNT().
 
@@ -96,16 +89,18 @@ Logical functions: IF(), AND(), OR().
 Lookup functions: VLOOKUP(), HLOOKUP(), INDEX() and MATCH().
 
 
-Pivot Tables and Charts
+### Pivot Tables and Charts
 
 Creating Pivot Tables for summarizing large datasets.
 
 Building dynamic charts and graphs to visualize trends.
 
 
-SQL Learning
+---
 
-SQL Basics
+### SQL Learning
+
+### SQL Basics
 
 Introduction to SQL syntax and statements.
 
@@ -114,7 +109,7 @@ Understanding databases and tables.
 Using SELECT statements to extract data.
 
 
-Data Querying
+### Data Querying
 
 Filtering data using WHERE clauses.
 
@@ -123,20 +118,21 @@ Sorting data with ORDER BY.
 Limiting data with LIMIT.
 
 
-Joining Tables
+### Joining Tables
 
 Introduction to different joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
 
 Combining data from multiple tables to answer questions.
 
 
-Aggregations and Functions
+### Aggregations and Functions
 
 Using aggregate functions: COUNT(), SUM(), AVG(), MIN(), MAX().
 
 Grouping data with GROUP BY.
 
 
+---
 Projects
 
 Excel Projects
