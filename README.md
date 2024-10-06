@@ -100,7 +100,7 @@ COUNT()
 ```
 
 Logical functions:
-```Excelfunction
+```Excel
 IF()
 AND()
 OR()
