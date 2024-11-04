@@ -190,14 +190,88 @@ Revenue distribution report by region for comparative analysis.
 The dataset was imported into an SQL Server environment to enable deeper analysis. Key SQL queries were crafted to extract the following insights:
 
 
+#### Power BI Dashboard
+
+The insights obtained from Excel and SQL were visualized using Power BI. The dashboard includes:
+
+#### Sales Overview:
+
+A line chart displaying monthly sales trends for the current year.
+
+A card showing total revenue and key performance indicators (KPIs) such as average monthly revenue.
+
+
+#### Top-Performing Products:
+
+A bar chart highlighting the highest-selling products by total sales.
+
+A table displaying products with no recent sales.
+
+#### Regional Performance:
+
+A map visualization showcasing sales distribution by region.
+
+A pie chart depicting the percentage contribution of each region to the overall sales.
+
+#### Customer Analysis:
+
+A table showing the top 5 customers by total purchase amount.
+
+
+#### Conclusion
+
+This project demonstrated the power of using Excel for preliminary data exploration, SQL for detailed data extraction, and Power BI for comprehensive visualization. The combined analysis provided actionable insights into sales performance, helping to identify growth opportunities and optimize decision-making strategies for the retail store.
+
+#### Repository Contents
+
+Excel Reports: Files containing the pivot tables and sales analysis.
+
+SQL Queries: Scripts used for data extraction.
+
+Power BI Dashboard: Interactive dashboard file and screenshots.
+
+Documentation: This report detailing the project workflow and insights.
 
 
 
-### Resources
+#### Customer Segmentation for a Subscription Service
 
-- Excel Official Documentation
+#### Project Overview
 
-- SQL Tutorials
+This project focuses on analyzing customer data for a subscription service to identify key customer segments and trends. The analysis aims to provide insights into customer behavior, subscription patterns, and trends related to subscription cancellations and renewals. The final output is a Power BI dashboard that visualizes these findings for better business decision-making.
+
+#### Objectives
+
+- Analyze customer data to find subscription patterns and trends.
+
+- Identify popular subscription types and average subscription duration.
+
+- Track subscription cancellations and renewal trends.
+
+- Create a Power BI dashboard to visualize key insights and enable interactive analysis.
+
+#### Tools Used
+
+Microsoft Excel: For initial data exploration and pivot table analysis.
+
+SQL: To extract key insights and perform more advanced data queries.
+
+Power BI: To create an interactive dashboard for data visualization
+
+#### Step-by-Step Process
+
+1. Excel Analysis
+
+Tasks Performed:
+
+Pivot Tables: Used pivot tables to analyze customer data and identify patterns in subscriptions.
+
+Average Subscription Duration: Calculated the average duration of customer subscriptions.
+
+Most Popular Subscription Types: Identified the most subscribed-to types and any trends related to them.
+
+Additional Reports: Created additional reports highlighting customer demographics, subscription changes over time, and common renewal patterns.
+
 
 - Kaggle Datasets - Free datasets to practice data analysis.
 
