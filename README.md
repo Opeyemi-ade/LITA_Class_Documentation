@@ -1,4 +1,4 @@
-# LITA_Class_Documentation
+# LITA_Class_Documentation_and _Projects
 This is where I documented my journey while learning Data Analysis with the Incubator Hub. Focusing on tools like Excel, (For Data Cleaning, Data Analysis, Data Visualization), SQL, (Structured Query Language for querying Data), power Bi (for data visualization), and Github, ( for Portfolio Building). I will update this repository with notes, exercises, and projects as I progress.
 
 
@@ -145,22 +145,51 @@ Grouping data with GROUP BY.
 ---
 ### Projects
 
+### Sales Performance Analysis For A Retail Store
 
-#### Excel Projects
+#### Project Overview
 
-- Sales Data Analysis: Using a sample sales dataset, clean, sort, and visualize the sales performance over different periods and regions.
+The objective of this project is to analyze the sales performance of a retail store using a combination of Excel, SQL, and Power BI. By leveraging these tools, we aim to gain insights into sales trends, top-performing products, regional performance, and customer purchasing behavior. The final output will be an interactive Power BI dashboard that provides a comprehensive view of these findings.
+
+#### Tools Used
+
+- Excel: For initial data exploration and summarization.
+
+- SQL: For extracting detailed insights from the dataset.
+
+- Power BI: For creating interactive visualizations.
 
 
-- Employee Productivity Tracker: Analyze a dataset of employee productivity, using pivot tables and charts.
+#### Project Details
 
 
+#### Excel Analysis
 
-#### SQL Projects
+The initial data exploration and analysis were conducted using Microsoft Excel:
 
-- Customer Orders Database: Write SQL queries to analyze customer orders, identify high-value customers, and discover trends in purchasing behavior.
+Pivot Tables: Created pivot tables to summarize total sales by product, region, and month, allowing a high-level overview of key metrics.
+
+#### Formulas and Metrics:
+
+Used formulas to calculate the average sales per product using AVERAGE() and the total revenue per region using SUM().
+
+Generated additional insights such as identifying seasonal sales trends.
 
 
-- Movie Database: Query a movie database to find information like popular genres, top-rated films, and average ratings.
+#### Reports Created:
+
+Sales summary report by month to understand trends.
+
+Product performance report highlighting top and bottom performers.
+
+Revenue distribution report by region for comparative analysis.
+
+
+#### SQL Analysis
+
+The dataset was imported into an SQL Server environment to enable deeper analysis. Key SQL queries were crafted to extract the following insights:
+
+
 
 
 
