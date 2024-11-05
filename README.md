@@ -48,6 +48,13 @@ This repository serves as a log of my learning process in data analysis, includi
   3. Joining Tables
   4. Aggregating Data
 
+- Power BI:
+  1. Data Import And Transformation
+  2. Data Modeling
+  3. Data Visualization
+  4. DAX Functions
+  5. Report And Dashboard Creation
+
 ---
 
 ### Excel Learning
@@ -102,7 +109,6 @@ MATCH()
 
 - Building dynamic charts and graphs to visualize trends.
 
-
 ---
 
 ### SQL Learning
@@ -115,7 +121,6 @@ Understanding databases and tables.
 
 Using SELECT statements to extract data.
 
-
 #### Data Querying
 
 Filtering data using WHERE clauses.
@@ -124,13 +129,11 @@ Sorting data with ORDER BY.
 
 Limiting data with LIMIT.
 
-
 #### Joining Tables
 
 Introduction to different joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN.
 
 Combining data from multiple tables to answer questions.
-
 
 #### Aggregations and Functions
 
@@ -138,11 +141,32 @@ Using aggregate functions: COUNT(), SUM(), AVG(), MIN(), MAX().
 
 Grouping data with GROUP BY.
 
+---
+
+### Power BI Learning
+
+#### Data Import and Transformation:
+Understanding how to connect to various data sources (Excel, SQL databases, etc.), import data, and clean or transform it using Power Query Editor.
+
+#### Data Modeling
+Learning to create relationships between different data tables, use DAX (Data Analysis Expressions) for creating calculated columns and measures, and understanding the concept of data hierarchy.
+
+#### Visualization
+Developing skills to build interactive dashboards with different chart types such as bar charts, line charts, pie charts, and custom visuals. This includes using slicers, filters, and drill-throughs to enhance the user experience.
 
 ---
+
 ### Projects
 
+---
+
 ### Sales Performance Analysis For A Retail Store
+
+---
+### Data Sources
+---
+The primary source of Data used here is the Sales Data provided by the Sales department of the company. The Data given is table having an array of columns like OrderID, Customer Id, Product, Region, OrderDate, Quantity Sold and UnitPrice
+
 
 #### Project Overview
 
@@ -156,9 +180,11 @@ The objective of this project is to analyze the sales performance of a retail st
 
 - Power BI: For creating interactive visualizations.
 
+- Github for portfolio building.
+
 
 #### Project Details
-
+---
 
 #### Excel Analysis
 
@@ -172,7 +198,6 @@ Used formulas to calculate the average sales per product using AVERAGE() and the
 
 Generated additional insights such as identifying seasonal sales trends.
 
-
 #### Reports Created:
 
 Sales summary report by month to understand trends.
@@ -180,6 +205,8 @@ Sales summary report by month to understand trends.
 Product performance report highlighting top and bottom performers.
 
 Revenue distribution report by region for comparative analysis.
+
+![Sales Performance Report-Excel](https://github.com/user-attachments/assets/6efd1e55-43f0-46af-b569-e7754debed2b)
 
 
 #### SQL Analysis
