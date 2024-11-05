@@ -189,70 +189,128 @@ Revenue distribution report by region for comparative analysis.
 
 The dataset was imported into an SQL Server environment to enable deeper analysis. Key SQL queries were crafted to extract the following insights:
 
-##### THE TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
 
-```SELECT region, COUNT (CustomerName) as Number_of_Customers
-FROM CUSTOMERSDATA_LITA_PROJECT
-group by Region
-Order by Region
-SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+##### TOTAL SALES FOR EACH PRODUCT CATEGORY
+	
+```SELECT 	
+    Product AS ProductCategory,  	
+    SUM(SALES_REVENUE) AS TotalSales	
+FROM 	
+    SALESDATA_LITA_PROJECT	
+GROUP BY 	
+    Product	
+ORDER BY 	
+    TotalSales DESC;
+```	
+	
+	
+##### NUMBEERS OF SALES TRANSACTIONS IN EACH REGION
+	
+ ```SELECT 
+    REGION, 	
+    COUNT(OrderID) AS NumberOfTransactions	
+FROM 	
+    SALESDATA_LITA_PROJECT	
+GROUP BY 	
+    Region	
+ORDER BY 	
+    NumberOfTransactions DESC;	
+```	
+	
+	
+##### HIGHEST-SELLING PRODUCT BY TOTAL SALES VALUE
+	
+ ```SELECT Top 1
+	Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM 	
+	SALESDATA_LITA_PROJECT
+GROUP BY	
+	Product
+ORDER BY	
+	TotalSales DESC;
+```
+	
+	
+ ##### TOTAL REVENUE PER PRODUCT
+ 
+  ```SELECT 
+    Product, 	
+    SUM(Quantity * UnitPrice) AS TotalRevenue	
+FROM 	
+    SALESDATA_LITA_PROJECT	
+GROUP BY 	
+    Product	
+ORDER BY 	
+    TotalRevenue DESC;	
+	```
+	
+
+##### MONTHLY SALES TOTAL FOR THE CURRENT YEAR
+	
+ ```SELECT 
+    MONTH(OrderDate) AS Month, 	
+    SUM(Quantity * UnitPrice) AS MonthlySales	
+FROM 	
+    SALESDATA_LITA_PROJECT	
+WHERE 	
+    YEAR(OrderDate) = YEAR(GETDATE())	
+GROUP BY 	
+    MONTH(OrderDate)	
+ORDER BY 	
+    Month;	
+	```
+	
+	
+ ##### TOP 5 CUSTOMERS BY TOTAL PURCHASE AMOUNT
+	SELECT TOP 5
+    CUSTOMER_ID, 	
+    SUM(Quantity * UnitPrice) AS TotalPurchaseAmount	
+FROM 	
+    SALESDATA_LITA_PROJECT 	
+GROUP BY 	
+    CUSTOMER_ID	
+ORDER BY 	
+    TotalPurchaseAmount DESC;	
+	
+	
+	
+ ##### PERCENTAGE OF TOTAL SALES CONTRIBUTED BY EACH REGION
+	
+ ```SELECT 
+    Region, 	
+    SUM(CAST(Quantity AS DECIMAL(10, 2)) * CAST(UnitPrice AS DECIMAL(10, 2))) AS TotalSales, 	
+    (SUM(CAST(Quantity AS DECIMAL(10, 2)) * CAST(UnitPrice AS DECIMAL(10, 2))) / 	
+        (SELECT SUM(CAST(Quantity AS DECIMAL(10, 2)) * CAST(UnitPrice AS DECIMAL(10, 2))) 	
+         FROM SALESDATA_LITA_PROJECT) * 100) AS SalesPercentage	
+FROM 	
+    SALESDATA_LITA_PROJECT	
+GROUP BY 	
+    Region	
+ORDER BY 	
+    SalesPercentage DESC;	
+	```
+	
+	
+##### PRODUCTS WITH NO SALES IN THE LAST QUARTER
+
+	```SELECT 
+    Product	
+FROM 	
+    SALESDATA_LITA_PROJECT 	
+WHERE 	
+    NOT EXISTS (	
+        SELECT 1	
+        FROM SALESDATA_LITA_PROJECT AS SalesLastQuarter	
+        WHERE 	
+            SalesLastQuarter.Product = SALESDATA_LITA_PROJECT.Product 	
+            AND OrderDate >= DATEADD(QUARTER, -1, GETDATE())	
+    )	
+GROUP BY 	
+    Product;
 ```
 
-##### THE MOST POPULAR SUBSCRIPTION TYPE BY THE NUMBER OF CUSTOMERS
+![image](https://github.com/user-attachments/assets/54687a03-dae4-425f-a26b-a1f152bec6c2)
 
-```select top 1(SubscriptionType),
-COUNT (CustomerID) as TOTAL_CUSTOMERS
-from CUSTOMERSDATA_LITA_PROJECT
-group by SubscriptionType
-order by TOTAL_CUSTOMERS desc
-```
-
-##### CUSTOMERS WHO CANCELLED THEIR SUBSCRIPTION WITHIN 6 MONTHS
-
-```SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
-SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd, Region
-from CUSTOMERSDATA_LITA_PROJECT
-where canceled = 'TRUE'
-and datediff(month, subscriptionEnd, SubscriptionStart) <= 6;
-```
-
-##### THE AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS
-
-```select  AVG(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) 
-as avg_subscription_duration
-from CUSTOMERSDATA_LITA_PROJECT
-```
-
-##### CUSTOMERS WITH SUBCRIPTIONS LONGER THAN 12 MONTHS
-
-```SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd
-from CUSTOMERSDATA_LITA_PROJECT
-where datediff(month, subscriptionEnd, SubscriptionStart) > 12
-```
-
-##### CALCULTATE TOTAL REVENUE BY SUBSCRIPTION TYPE
-
-```select SubscriptionType,  sum (revenue) as Total_Revenue
-from CUSTOMERSDATA_LITA_PROJECT
-group by Subscriptiontype
-select * from CUSTOMERSDATA_LITA_PROJECT
-```
-
-#### THE TOP THREE REGIONS BY SUBSCRIPTION CANCELLATIONS
-
-```SELECT REGION, COUNT(CustomerID) As total_cancellations
-from CUSTOMERSDATA_LITA_PROJECT
-where canceled = 'TRUE'
-group by region
-order by total_cancellations
-```
-
-##### THE TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTIONS
-```SELECT canceled,
-count (CustomerID) AS Total_Subscriptions
-from CUSTOMERSDATA_LITA_PROJECT
-group by canceled
-```
 
 
 ![image](https://github.com/user-attachments/assets/311475ac-fdf7-4edc-8200-bede4b0da3cb)
@@ -340,6 +398,72 @@ Average Subscription Duration: Calculated the average duration of customer subsc
 Most Popular Subscription Types: Identified the most subscribed-to types and any trends related to them.
 
 Additional Reports: Created additional reports highlighting customer demographics, subscription changes over time, and common renewal patterns.
+
+
+##### THE TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
+
+```SELECT region, COUNT (CustomerName) as Number_of_Customers
+FROM CUSTOMERSDATA_LITA_PROJECT
+group by Region
+Order by Region
+SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+```
+
+##### THE MOST POPULAR SUBSCRIPTION TYPE BY THE NUMBER OF CUSTOMERS
+
+```select top 1(SubscriptionType),
+COUNT (CustomerID) as TOTAL_CUSTOMERS
+from CUSTOMERSDATA_LITA_PROJECT
+group by SubscriptionType
+order by TOTAL_CUSTOMERS desc
+```
+
+##### CUSTOMERS WHO CANCELLED THEIR SUBSCRIPTION WITHIN 6 MONTHS
+
+```SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd, Region
+from CUSTOMERSDATA_LITA_PROJECT
+where canceled = 'TRUE'
+and datediff(month, subscriptionEnd, SubscriptionStart) <= 6;
+```
+
+##### THE AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS
+
+```select  AVG(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) 
+as avg_subscription_duration
+from CUSTOMERSDATA_LITA_PROJECT
+```
+
+##### CUSTOMERS WITH SUBCRIPTIONS LONGER THAN 12 MONTHS
+
+```SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd
+from CUSTOMERSDATA_LITA_PROJECT
+where datediff(month, subscriptionEnd, SubscriptionStart) > 12
+```
+
+##### CALCULTATE TOTAL REVENUE BY SUBSCRIPTION TYPE
+
+```select SubscriptionType,  sum (revenue) as Total_Revenue
+from CUSTOMERSDATA_LITA_PROJECT
+group by Subscriptiontype
+select * from CUSTOMERSDATA_LITA_PROJECT
+```
+
+#### THE TOP THREE REGIONS BY SUBSCRIPTION CANCELLATIONS
+
+```SELECT REGION, COUNT(CustomerID) As total_cancellations
+from CUSTOMERSDATA_LITA_PROJECT
+where canceled = 'TRUE'
+group by region
+order by total_cancellations
+```
+
+##### THE TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTIONS
+```SELECT canceled,
+count (CustomerID) AS Total_Subscriptions
+from CUSTOMERSDATA_LITA_PROJECT
+group by canceled
+```
 
 
 - Kaggle Datasets - Free datasets to practice data analysis.
