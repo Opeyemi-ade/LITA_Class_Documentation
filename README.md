@@ -334,13 +334,6 @@ GROUP BY
     Product;
 ```
 
-![image](https://github.com/user-attachments/assets/54687a03-dae4-425f-a26b-a1f152bec6c2)
-
-
-
-![image](https://github.com/user-attachments/assets/311475ac-fdf7-4edc-8200-bede4b0da3cb)
-
-
 
 #### Power BI Dashboard
 
@@ -369,6 +362,7 @@ A pie chart depicting the percentage contribution of each region to the overall 
 
 A table showing the top 5 customers by total purchase amount.
 
+![Sales Analysis Dashboard-Power BI](https://github.com/user-attachments/assets/d6a40d56-b4fd-4522-9d58-db06fb906977)
 
 #### Conclusion
 
