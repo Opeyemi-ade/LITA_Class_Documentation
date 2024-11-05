@@ -189,6 +189,67 @@ Revenue distribution report by region for comparative analysis.
 
 The dataset was imported into an SQL Server environment to enable deeper analysis. Key SQL queries were crafted to extract the following insights:
 
+##### THE TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
+
+SELECT region, COUNT (CustomerName) as Number_of_Customers
+FROM CUSTOMERSDATA_LITA_PROJECT
+group by Region
+Order by Region
+SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+
+##### THE MOST POPULAR SUBSCRIPTION TYPE BY THE NUMBER OF CUSTOMERS
+
+select top 1(SubscriptionType),
+COUNT (CustomerID) as TOTAL_CUSTOMERS
+from CUSTOMERSDATA_LITA_PROJECT
+group by SubscriptionType
+order by TOTAL_CUSTOMERS desc
+
+##### CUSTOMERS WHO CANCELLED THEIR SUBSCRIPTION WITHIN 6 MONTHS
+
+SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd, Region
+from CUSTOMERSDATA_LITA_PROJECT
+where canceled = 'TRUE'
+and datediff(month, subscriptionEnd, SubscriptionStart) <= 6;
+
+##### THE AVERAGE SUBSCRIPTION DURATION FOR ALL CUSTOMERS
+
+select  AVG(DATEDIFF(day, SubscriptionStart, SubscriptionEnd)) 
+as avg_subscription_duration
+from CUSTOMERSDATA_LITA_PROJECT
+
+##### CUSTOMERS WITH SUBCRIPTIONS LONGER THAN 12 MONTHS
+
+SELECT CustomerID, CustomerName, SubscriptionStart, SubscriptionEnd
+from CUSTOMERSDATA_LITA_PROJECT
+where datediff(month, subscriptionEnd, SubscriptionStart) > 12
+
+##### CALCULTATE TOTAL REVENUE BY SUBSCRIPTION TYPE
+
+select SubscriptionType,  sum (revenue) as Total_Revenue
+from CUSTOMERSDATA_LITA_PROJECT
+group by Subscriptiontype
+select * from CUSTOMERSDATA_LITA_PROJECT
+
+#### THE TOP THREE REGIONS BY SUBSCRIPTION CANCELLATIONS
+
+SELECT REGION, COUNT(CustomerID) As total_cancellations
+from CUSTOMERSDATA_LITA_PROJECT
+where canceled = 'TRUE'
+group by region
+order by total_cancellations
+
+##### THE TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTIONS
+SELECT canceled,
+count (CustomerID) AS Total_Subscriptions
+from CUSTOMERSDATA_LITA_PROJECT
+group by canceled
+
+
+![image](https://github.com/user-attachments/assets/311475ac-fdf7-4edc-8200-bede4b0da3cb)
+
+
 
 #### Power BI Dashboard
 
