@@ -191,11 +191,12 @@ The dataset was imported into an SQL Server environment to enable deeper analysi
 
 ##### THE TOTAL NUMBER OF CUSTOMERS FROM EACH REGION
 
-SELECT region, COUNT (CustomerName) as Number_of_Customers
+```SELECT region, COUNT (CustomerName) as Number_of_Customers
 FROM CUSTOMERSDATA_LITA_PROJECT
 group by Region
 Order by Region
 SELECT * FROM CUSTOMERSDATA_LITA_PROJECT
+```
 
 ##### THE MOST POPULAR SUBSCRIPTION TYPE BY THE NUMBER OF CUSTOMERS
 
