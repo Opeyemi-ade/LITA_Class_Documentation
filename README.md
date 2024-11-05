@@ -48,7 +48,6 @@ This repository serves as a log of my learning process in data analysis, includi
   3. Joining Tables
   4. Aggregating Data
 
-
 ---
 
 ### Excel Learning
@@ -59,7 +58,6 @@ This repository serves as a log of my learning process in data analysis, includi
 
 - Types of data (numerical, text, dates) and their significance in analysis.
 
-
 #### Data Cleaning and Manipulation
 
 - Sorting and filtering data.
@@ -69,7 +67,6 @@ This repository serves as a log of my learning process in data analysis, includi
 - Using Text to Columns and Data Validation.
 
 - Data cleaning and formating.
-
 
 #### Formulas and Functions
 
@@ -242,7 +239,7 @@ GROUP BY
     Product	
 ORDER BY 	
     TotalRevenue DESC;	
-	```
+```
 	
 
 ##### MONTHLY SALES TOTAL FOR THE CURRENT YEAR
@@ -258,11 +255,12 @@ GROUP BY
     MONTH(OrderDate)	
 ORDER BY 	
     Month;	
-	```
+```
 	
 	
  ##### TOP 5 CUSTOMERS BY TOTAL PURCHASE AMOUNT
-	SELECT TOP 5
+
+```SELECT TOP 5
     CUSTOMER_ID, 	
     SUM(Quantity * UnitPrice) AS TotalPurchaseAmount	
 FROM 	
@@ -271,8 +269,8 @@ GROUP BY
     CUSTOMER_ID	
 ORDER BY 	
     TotalPurchaseAmount DESC;	
-	
-	
+```
+
 	
  ##### PERCENTAGE OF TOTAL SALES CONTRIBUTED BY EACH REGION
 	
@@ -288,12 +286,12 @@ GROUP BY
     Region	
 ORDER BY 	
     SalesPercentage DESC;	
-	```
+```
 	
 	
 ##### PRODUCTS WITH NO SALES IN THE LAST QUARTER
 
-	```SELECT 
+```SELECT 
     Product	
 FROM 	
     SALESDATA_LITA_PROJECT 	
@@ -465,18 +463,63 @@ from CUSTOMERSDATA_LITA_PROJECT
 group by canceled
 ```
 
+#### Power BI Dashboard
 
-- Kaggle Datasets - Free datasets to practice data analysis.
+Dashboard Features:
+
+Customer Segmentation: A visualization displaying customer distribution by region and subscription type.
+
+Subscription Trends: Line charts showing subscription trends over time, including new sign-ups and cancellations.
+
+Cancellation Analysis: A bar chart highlighting the top regions with the highest cancellation rates.
+
+Average Subscription Duration: Visuals illustrating average subscription periods segmented by subscription type.
+
+Interactive Slicers: Slicers for filtering data by region, subscription type, and status (active/canceled).
 
 
----
+Dashboard Insights:
 
-## Data Analysis
-```SQL
-SELECT * FROM TABLE1
-WHERE CONDITION = TRUE
-```
----
-**data visualization**
-*SQL*
+The most popular subscription types and regions with high customer counts.
 
+Key regions with significant numbers of cancellations.
+
+A visual comparison of active vs. canceled subscriptions to highlight retention challenges.
+
+The average subscription duration across different customer segments.
+
+
+Final Deliverable
+
+The final product is an interactive Power BI dashboard that showcases:
+
+Customer segmentation by region and subscription type.
+
+Trends in subscription cancellations and renewals.
+
+Average subscription durations and total revenue breakdowns.
+
+The ability to interact with data using slicers for deeper analysis.
+
+
+Conclusion
+
+This project provided valuable insights into customer behavior, popular subscription types, and trends related to subscription cancellations and renewals. The Power BI dashboard offers a user-friendly platform for stakeholders to interact with data and make informed decisions based on real-time analysis.
+
+Repository Structure
+
+Excel Reports: Contains the Excel file with pivot tables and summary analysis.
+
+SQL Queries: Includes a .sql file with all queries used for data extraction and analysis.
+
+Power BI Dashboard: A .pbix file containing the Power BI dashboard for interactive data visualization.
+
+Documentation: This project report and a README.md file outlining the project scope and instructions for replicating the analysis.
+
+Future Enhancements
+
+Implement machine learning models to predict customer churn.
+
+Incorporate additional customer demographics for deeper segmentation analysis.
+
+Automate data extraction using SQL scripts to update the dashboard dynamically.
